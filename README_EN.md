@@ -220,7 +220,33 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 
 ### 1. Install an AI Client
 
-Install the client you plan to use: Claude Code or Codex. This repository keeps one canonical workflow and provides Claude Code commands plus Codex skills.
+This repository keeps one canonical workflow and provides Claude Code commands plus Codex skills. Install the client you plan to use.
+
+For Claude Code users:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+For Codex users:
+
+```bash
+# macOS / Linux
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+
+# Or use npm
+npm install -g @openai/codex
+
+# Or use Homebrew
+brew install --cask codex
+
+# Verify installation
+codex --version
+```
+
+Windows users can use the official PowerShell installer: `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`.
+
+If `codex --version` prints a version, you can continue with this project's Codex skills installation.
 
 ### 2. Install Skills
 

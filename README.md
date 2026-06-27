@@ -219,7 +219,33 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 ### 1. 安装 AI 客户端
 
-先安装你要使用的客户端：Claude Code 或 Codex。本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands 与 Codex skills。
+本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands 与 Codex skills。按你使用的客户端安装即可。
+
+Claude Code 用户：
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Codex 用户：
+
+```bash
+# macOS / Linux
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+
+# 或使用 npm
+npm install -g @openai/codex
+
+# 或使用 Homebrew
+brew install --cask codex
+
+# 验证安装
+codex --version
+```
+
+Windows 用户可使用官方 PowerShell 安装命令：`powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`。
+
+如果 `codex --version` 能正常输出版本号，就可以继续安装本项目的 Codex skills。
 
 ### 2. 安装 Skills
 
