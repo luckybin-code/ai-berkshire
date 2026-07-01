@@ -203,6 +203,7 @@ related_projects: [ai-berkshire]
 - [HBM 시장 - BIEN P.R.](https://bien.ltd/blogs/hbm-market-sk-hynix-samsung-2026-hegemony-war/)
 - [TSMC 파운드리 점유율 - 서울신문](https://www.seoul.co.kr/news/economy/2026/06/12/20260612500275)
 - [TSMC 파운드리 점유율 - 파이낸셜뉴스](https://www.fnnews.com/news/202606121640388363)
-- [이재용 대법원 무죄 판결 - 나무위키](https://namu.wiki/w/%EC%9D%B4%EC%9E%AC%EC%9A%A9/%EC%9E%AC%ED%8C%90)
+- [대법원 공식 보도자료 — 이재용 '부당합병·회계부정 혐의' 무죄 확정](https://www.scourt.go.kr/portal/news/NewsViewAction.work?pageIndex=1&searchWord=&searchOption=&seqnum=5807&gubun=2)
+- [이재용 9년 사법 족쇄 풀렸다 - 서울신문](https://www.seoul.co.kr/news/society/law/2025/07/18/20250718009004)
 - 재무제표: DART 전자공시시스템 (Open API), 2021~2025 연결재무제표
 - 시세/밸류에이션: 네이버금융 (2026-07-01)
