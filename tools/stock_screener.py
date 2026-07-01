@@ -39,6 +39,11 @@ DEFAULT_WATCHLIST = {
     "us_crypto": ["COIN", "HOOD", "MSTR", "CRCL"],
     "hk_internet": ["0700.HK", "9888.HK", "1024.HK", "9992.HK"],
     "a_share": [],  # A股需要不同数据源，后续扩展
+    # 한국 주식: Yahoo Finance 접미사(.KS=코스피, .KQ=코스닥) 사용
+    # 실시간 시세/밸류에이션은 tools/kr_data.py 사용 권장 (네이버금융 기반, 더 정확함)
+    "kr_semiconductor": ["005930.KS", "000660.KS"],       # 삼성전자, SK하이닉스
+    "kr_battery": ["373220.KS", "006400.KS"],             # LG에너지솔루션, 삼성SDI
+    "kr_platform": ["035420.KS", "035720.KS"],            # NAVER, 카카오
 }
 
 # ============================================================
@@ -330,6 +335,12 @@ def scan_ticker(ticker, verbose=True):
 # ============================================================
 
 def main():
+    # Windows 콘솔 기본 코드페이지(cp949 등)에서 비-ASCII 출력 시 발생하는
+    # UnicodeEncodeError 방지 (한국 종목 추가 과정에서 확인된 문제).
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
+
     args = sys.argv[1:]
 
     # 更新模式

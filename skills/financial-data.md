@@ -29,6 +29,18 @@
 | 1 (주) | **동방재부(东方财富)** | eastmoney.com → 종목 코드 검색 → 재무제표 | 직접 접속 |
 | 2 (부) | **거차오자쉰(巨潮资讯)** | cninfo.com.cn | 원본 연차/분기 보고서 PDF |
 
+### 한국 주식 (삼성전자, SK하이닉스 등)
+
+| 우선순위 | 출처 | 접근 방식 |
+|--------|------|---------|
+| 1 (주) | **`tools/kr_data.py`** (네이버금융 실시간 시세/밸류에이션) | `python3 tools/kr_data.py quote {종목코드}`, `valuation {종목코드}`, `search {회사명}` — 인증 불필요, 즉시 사용 가능 |
+| 2 (부) | **DART 전자공시시스템(dart.fss.or.kr)** | `python3 tools/kr_data.py financials {종목코드} --year {연도} --report {annual\|q1\|half\|q3}` — 무료 인증키 필요(최초 1회 `setup` 실행), 사업/분기보고서 원문 조회는 dart.fss.or.kr에서 직접 |
+| 원본 1차 자료 | **KRX정보데이터시스템** | data.krx.co.kr — 공식 시세/지수/투자자별 매매동향 |
+| 보조 | **네이버페이 증권** | finance.naver.com/item/main.naver?code={종목코드} — 컨센서스, 동종업계 비교, 뉴스 |
+| 보조 | **한경컨센서스** | consensus.hankyung.com — 증권사 리포트 원문(목표주가, 투자의견) |
+
+한국 주식은 `tools/kr_data.py`가 1차 데이터 소스다. `quote`/`valuation`/`search`는 즉시 쓸 수 있고, `financials`는 DART Open API 인증키(무료, opendart.fss.or.kr에서 발급)가 있어야 한다. 인증키가 없거나 DART 조회가 실패하면 WebSearch로 dart.fss.or.kr 원문 공시를 직접 찾아 보완한다.
+
 ---
 
 ## 실행 규정
@@ -101,3 +113,5 @@
 | 지비트 | eastmoney.com (603444) | cninfo.com.cn |
 | Nintendo | macrotrends.net/stocks/charts/NTDOY | stockanalysis.com/stocks/ntdoy |
 | Capcom | macrotrends (CCOEY) | stockanalysis (CCOEY) |
+| 삼성전자 | `python3 tools/kr_data.py valuation 005930` | dart.fss.or.kr (종목코드 005930) |
+| SK하이닉스 | `python3 tools/kr_data.py valuation 000660` | dart.fss.or.kr (종목코드 000660) |

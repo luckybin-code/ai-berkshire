@@ -34,5 +34,17 @@
     "1024.HK",
     "9992.HK"
   ],
-  "a_share": []
+  "a_share": [],
+  "kr_semiconductor": [
+    "005930.KS",
+    "000660.KS"
+  ],
+  "kr_battery": [
+    "373220.KS",
+    "006400.KS"
+  ],
+  "kr_platform": [
+    "035420.KS",
+    "035720.KS"
+  ]
 }
