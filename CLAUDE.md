@@ -41,19 +41,19 @@ reports/
 
 | Skill | 파일명 형식 | 예시 |
 |------|---------|------|
-| /investment-team | `{회사명}/` 디렉토리 안에 4개 관점 + 최종 보고서 | `reports/핀둬둬/최종보고서.md` |
-| /investment-research | `{회사명}-research-{YYYYMMDD}.md` | `reports/텐센트/텐센트-research-20260408.md` |
-| /investment-checklist | `{회사명}-checklist-{YYYYMMDD}.md` | `reports/텐센트/텐센트-checklist-20260408.md` |
-| /industry-research | `{산업명}-industry-{YYYYMMDD}.md` (루트 디렉토리) | `reports/원자력발전-industry-20260409.md` |
-| /industry-funnel | `{산업명}-funnel-{YYYYMMDD}.md` (루트 디렉토리) | `reports/AI연산력-funnel-20260509.md` |
-| /private-company-research | `{회사명}-private-{YYYYMMDD}.md` | `reports/바이트댄스/바이트댄스-private-20260408.md` |
-| /earnings-review | `{회사명}-earnings-{기간}.md` | `reports/텐센트/텐센트-earnings-2025Q4.md` |
-| /earnings-team | `{회사명}/` 디렉토리 안에 4개 거장 관점 + 리서치 초고 + 공식계정 원고 + 독자 리뷰 | `reports/텐센트/텐센트-earnings-2025Q4.md` (공식계정 확정본) |
-| /thesis-tracker | `{회사명}-thesis.md` (장기 유지관리) | `reports/텐센트/텐센트-thesis.md` |
-| /portfolio-review | `portfolio-latest.md` (루트 디렉토리, 지속 업데이트) | `reports/portfolio-latest.md` |
-| /management-deep-dive | `{회사명}-management-{YYYYMMDD}.md` | `reports/텐센트/텐센트-management-20260409.md` |
+| /팀분석 | `{회사명}/` 디렉토리 안에 4개 관점 + 최종 보고서 | `reports/핀둬둬/최종보고서.md` |
+| /종합리서치 | `{회사명}-research-{YYYYMMDD}.md` | `reports/텐센트/텐센트-research-20260408.md` |
+| /체크 | `{회사명}-checklist-{YYYYMMDD}.md` | `reports/텐센트/텐센트-checklist-20260408.md` |
+| /산업리서치 | `{산업명}-industry-{YYYYMMDD}.md` (루트 디렉토리) | `reports/원자력발전-industry-20260409.md` |
+| /산업퍼널 | `{산업명}-funnel-{YYYYMMDD}.md` (루트 디렉토리) | `reports/AI연산력-funnel-20260509.md` |
+| /비상장리서치 | `{회사명}-private-{YYYYMMDD}.md` | `reports/바이트댄스/바이트댄스-private-20260408.md` |
+| /실적정독 | `{회사명}-earnings-{기간}.md` | `reports/텐센트/텐센트-earnings-2025Q4.md` |
+| /실적팀 | `{회사명}/` 디렉토리 안에 4개 거장 관점 + 리서치 초고 + 공식계정 원고 + 독자 리뷰 | `reports/텐센트/텐센트-earnings-2025Q4.md` (공식계정 확정본) |
+| /논제추적 | `{회사명}-thesis.md` (장기 유지관리) | `reports/텐센트/텐센트-thesis.md` |
+| /포트폴리오 | `portfolio-latest.md` (루트 디렉토리, 지속 업데이트) | `reports/portfolio-latest.md` |
+| /경영진분석 | `{회사명}-management-{YYYYMMDD}.md` | `reports/텐센트/텐센트-management-20260409.md` |
 
-## /investment-team 파일 구조
+## /팀분석 파일 구조
 
 ```
 reports/{회사명}/
@@ -73,7 +73,7 @@ reports/{회사명}/
 - "제 생각에는", "제가 보기엔", "명백히" 같은 주관적 표현 금지 — "데이터에 따르면", "증거가 보여주듯", "OO 출처에 따르면"으로 대체
 - **양면을 모두 제시**: 모든 핵심 판단에는 반드시 반대 근거("하지만 다른 한편으로는...")를 함께 제시하여, 독자가 스스로 판단할 수 있게 함
 - 불확실한 사안은 "불확실함" 또는 "데이터 부족"이라고 솔직히 말할 것 — 추측으로 확실함을 채우지 말 것
-- 모든 skill(investment-team, investment-research, earnings-review 등)은 실행 시 위 원칙을 반드시 준수해야 함
+- 모든 skill(팀분석, 종합리서치, 실적정독 등)은 실행 시 위 원칙을 반드시 준수해야 함
 
 ## 웹 검색 출처 신뢰도 기준
 
